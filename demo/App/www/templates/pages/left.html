@@ -1,0 +1,13 @@
+﻿<ion-view view-title="Categorias" ng-controller="panelController as panel">
+    <ion-header-bar class="bar-brand">
+        <h1 class="title">Api Info</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list class="panel_list">
+            <ion-item ng-repeat="item in panel.list">
+                <h2>{{item.name}}</h2>
+                <h3>{{item.link}}</h3>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

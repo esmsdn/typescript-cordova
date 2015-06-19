@@ -1,0 +1,18 @@
+﻿<ion-view view-title="Collaborators">
+    <ion-content>
+        <ion-list class="collaborators_list">
+            <ion-item collection-repeat="collab in collaborators.list">
+                <h2>{{collab.name}}</h2>
+                <h3 ng-hide="!collab.twitter">
+                    <ion-icon class="ion-social-twitter"></ion-icon> {{collab.twitter}}
+                </h3>
+                <h3 ng-hide="!collab.github">
+                    <ion-icon class="ion-social-github"></ion-icon> {{collab.github}}
+                </h3>
+                <h3 ng-hide="!collab.email">
+                    <ion-icon class="ion-ios-email"></ion-icon> {{collab.email}}
+                </h3>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
